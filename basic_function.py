@@ -19,7 +19,7 @@ edge_cascade = cv.Canny(image, 125, 175)
 # cv.imshow('EdgeCascade', edge_cascade)
 
 # How to dilate image using structuring element
-dilated = cv.dilate(edge_cascade, 
+dilated = cv.dilate(edge_cascade,
                     cv.getStructuringElement(cv.MORPH_ELLIPSE, (2, 2)),
                     iterations=1)
 # cv.imshow("Dilated", dilated)
