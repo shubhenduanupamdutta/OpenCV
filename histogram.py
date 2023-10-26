@@ -25,8 +25,8 @@ masked_image = cv.bitwise_and(gray, gray, mask=mask)
 # cv.imshow("Masked Grayscale image", masked_image)
 
 # Grayscale histogram
-gray_hist = cv.calcHist(images=[gray], channels=[
-                        0], mask=mask, histSize=[256], ranges=[0, 255])
+gray_hist = cv.calcHist(images=[gray], channels=[0],
+                        mask=mask, histSize=[256], ranges=[0, 255])
 
 plt.figure()
 plt.title("Grayscale Histogram")
