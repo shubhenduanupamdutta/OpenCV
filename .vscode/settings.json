@@ -2,6 +2,8 @@
     "cSpell.words": [
         "imread",
         "matplotlib",
-        "pyplot"
+        "pyplot",
+        "Sobel",
+        "Soble"
     ]
 }
