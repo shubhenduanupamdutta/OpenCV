@@ -13,14 +13,14 @@ gray = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
 cv.imshow("Grayscale", gray)
 
 # Laplacian Edge detection
-lap = cv.Laplacian(gray, cv.CV_64F)
+lap = cv.Laplacian(gray, cv.CV_64F)  # type: ignore
 lap = np.array(np.absolute(lap), dtype=np.uint8)
 cv.imshow("Laplacian Edges", lap)
 
 # Soble Gradient Magnitude Representation
 # It calculates gradients in two directions
-sobel_x = cv.Sobel(gray, cv.CV_64F, 1, 0)
-sobel_y = cv.Sobel(gray, cv.CV_64F, 0, 1)
+sobel_x = cv.Sobel(gray, cv.CV_64F, 1, 0)  # type: ignore
+sobel_y = cv.Sobel(gray, cv.CV_64F, 0, 1)  # type: ignore
 combined_sobel = cv.bitwise_or(sobel_x, sobel_y)
 
 cv.imshow("Sobel X", sobel_x)
